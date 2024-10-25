@@ -1,0 +1,56 @@
+{
+    "name": "pipeweed",
+    "version": "0.1.0",
+    "description": "Babel transformer for promise pipeline operators (+>, ->) and method shorthand",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "tsc",
+        "test": "jest",
+        "prepare": "npm run build",
+        "lint": "eslint src/**/*.ts",
+        "format": "prettier --write 'src/**/*.ts'",
+        "type-check": "tsc --noEmit"
+    },
+    "keywords": [
+        "babel-plugin",
+        "pipeline",
+        "promises",
+        "transformer",
+        "typescript",
+        "babel"
+    ],
+    "author": "airgap",
+    "license": "CC0-1.0",
+    "devDependencies": {
+        "@babel/core": "^7.25.9",
+        "@babel/helper-plugin-utils": "^7.25.9",
+        "@types/babel__core": "^7.20.5",
+        "@types/babel__helper-plugin-utils": "^7.10.0",
+        "@types/jest": "^29.5.12",
+        "@types/node": "^20.11.24",
+        "@typescript-eslint/eslint-plugin": "^7.1.0",
+        "@typescript-eslint/parser": "^7.1.0",
+        "eslint": "^8.57.0",
+        "jest": "^29.7.0",
+        "prettier": "^3.2.5",
+        "ts-jest": "^29.1.2",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.6.3"
+    },
+    "peerDependencies": {
+        "@babel/core": "^7.0.0"
+    },
+    "files": [
+        "dist",
+        "README.md",
+        "LICENSE"
+    ],
+    "engines": {
+        "node": ">=14.0.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/airgap/pipeweed.git"
+    }
+}
