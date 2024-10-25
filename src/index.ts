@@ -6,7 +6,6 @@ import { transformSync, TransformOptions } from "@babel/core";
  * @returns The preprocessed code with custom operators replaced.
  */
 function preprocessOperators(code: string): string {
-  console.log("Original Code:", code);
 
   // Transform `+> .method()` shorthand to `.then(result => result.method())`
   code = code.replace(
@@ -54,7 +53,6 @@ function preprocessOperators(code: string): string {
     }
   );
 
-  console.log("Processed Code:", code);
   return code;
 }
 
